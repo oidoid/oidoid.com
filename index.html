@@ -5,45 +5,62 @@
     <title>oddoid</title>
     <style>
       body {
+        max-width: 768px;
+        margin: 0 auto;
         background: #f2f5f5;
       }
-      a {
+      a,
+      a > img {
         font-weight: bold;
         color: #3b8ca1;
       }
-      a:visited {
+      a:visited,
+      a:visited > img {
         color: #79a684;
       }
-      .content {
-        max-width: 530px;
-        margin: 0 auto;
-      }
+
       .oddoid {
         display: block;
         width: 100%;
+        max-width: 320px;
         height: auto;
-        margin: 4rem 0 0;
+        margin: 8px 0 24px;
         image-rendering: optimizeSpeed;
         image-rendering: pixelated;
       }
-      .tagline {
-        margin: 1rem 0 4rem;
-        text-transform: uppercase;
-        font-style: italic;
+
+      .portfolio {
+        padding: 0;
+        list-style: none;
       }
+      .portfolio-item {
+        display: flex;
+        margin: 24px 0;
+      }
+      .portfolio-item__header {
+        font-size: x-large;
+        margin: 8px 0;
+      }
+      .portfolio-item__thumbnail {
+        display: block;
+        box-sizing: border-box;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 2px;
+      }
+      .portfolio-item__text {
+        margin: 0 0 0 16px;
+      }
+
       .nature-elsewhere {
         text-transform: lowercase;
-      }
-      .copyright {
-        margin: 4rem 0;
-        font-size: x-small;
       }
     </style>
     <link rel="icon" href="favicon/favicon.png" />
     <link rel="manifest" href="manifest.json" />
   </head>
   <body>
-    <div class="content">
+    <header>
       <img
         class="oddoid"
         src="oddoid.png"
@@ -51,15 +68,80 @@
         height="160"
         alt="oddoid"
       />
- 
-     <p class="tagline">"Only one game and it's still not done."</p>
+    </header>
+    <main>
+      Developer of the following works:
+      <ul class="portfolio">
+        <li>
+          <div class="portfolio-item">
+            <a href="https://natureelsewhere.com">
+              <img
+                class="portfolio-item__thumbnail"
+                src="nature-elsewhere.png"
+                width="256"
+                height="192"
+                alt="Nature Elsewhere"
+            /></a>
+            <div class="portfolio-item__text">
+              <h3 class="portfolio-item__header nature-elsewhere">
+                <a href="https://natureelsewhere.com">Nature Elsewhere</a>
+              </h3>
+              <p>
+                An isometric adventure in an idealized state of nature. The
+                game, engine, and in-game level editor were all built from
+                scratch with TypeScript and WebGL. It's currently being ported
+                to Rust and WebAssembly.
+              </p>
+            </div>
+          </div>
+        </li>
 
-      The game is called
-      <a class="nature-elsewhere" href="https://natureelsewhere.com"
-        >Nature Elsewhere</a
-      >.
+        <li>
+          <div class="portfolio-item">
+            <a href="https://rndmem.com">
+              <img
+                class="portfolio-item__thumbnail"
+                src="mem.png"
+                width="256"
+                height="192"
+                alt="mem"
+            /></a>
+            <div class="portfolio-item__text">
+              <h3 class="portfolio-item__header">
+                <a href="https://rndmem.com">mem</a>
+              </h3>
+              <p>
+                Proportional and monospaced sans light pixel font family.
+                Available in sprite sheet and TTF formats.
+              </p>
+            </div>
+          </div>
+        </li>
 
-      <p class="copyright">© Stephen Niedzielski.</p>
-    </div>
+        <li>
+          <div class="portfolio-item">
+            <a href="https://github.com/oddoid/aseprite-atlas">
+              <img
+                class="portfolio-item__thumbnail"
+                src="aseprite-atlas.png"
+                width="256"
+                height="192"
+                alt="aseprite-atlas"
+            /></a>
+            <div class="portfolio-item__text">
+              <h3 class="portfolio-item__header">
+                <a href="https://github.com/oddoid/aseprite-atlas"
+                  >aseprite-atlas</a
+                >
+              </h3>
+              <p>
+                Aseprite sprite atlas parser and animator for browser and
+                Node.js.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
   </body>
 </html>
