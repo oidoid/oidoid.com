@@ -45,10 +45,16 @@
       }
       .portfolio-item__thumbnail {
         display: block;
-        box-sizing: border-box;
         border-width: 1px;
         border-style: solid;
         border-radius: 2px;
+        max-width: 128px;
+        height: auto;
+      }
+      @media (min-width: 480px) {
+        .portfolio-item__thumbnail {
+          max-width: unset;
+        }
       }
       .portfolio-item__text {
         margin: 0 0 0 16px;
@@ -144,7 +150,9 @@
           </div>
         </li>
       </ul>
-      <p>Source code available on <a href="https://git.io/oddoid">GitHub</a>.</p>
+      <p>
+        Source code available on <a href="https://git.io/oddoid">GitHub</a>.
+      </p>
     </main>
   </body>
 </html>
