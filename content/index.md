@@ -4,7 +4,7 @@ datePublished: '2004-01-03'
 keywords: ['Stephen Niedzielski', 'niedzielski', 'oidoid', 'dev', 'art']
 headline: "Stephen Niedzielski's personal website."
 image: 'https://niedzielski.com/logo.png'
-title: 'Homepage'
+title: 'oidoid'
 hideTitle: true
 ---
 
