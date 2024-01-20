@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "exclude": ["dist"],
+  "fmt": { "semiColons": false, "singleQuote": true },
+  "imports": {
+    "marked": "https://deno.land/x/marked@1.0.2/mod.ts",
+    "npm:@lit-labs/ssr": "npm:@lit-labs/ssr@3.2.0",
+    "npm:lit": "npm:lit@3.1.0",
+    "npm:lit-analyzer": "npm:lit-analyzer@2.0.2",
+    "std/": "https://deno.land/std@0.210.0/"
+  },
+  "lint": { "rules": { "exclude": ["no-inferrable-types"] } },
+  "lock": false,
+  "tasks": {
+    "build": "src/mod.ts",
+    "clean": "rm -rf dist",
+    "start": "tools/build --watch",
+    "test": "deno task test:types && deno task test:unit && deno lint && deno fmt --check && deno task test:ui && deno task build",
+    "test:types": "deno check src/mod.ts",
+    "test:ui": "deno run --allow-read --allow-sys npm:lit-analyzer --maxWarnings=0 --rules.no-missing-element-type-definition --rules.no-unknown-event --strict",
+    "test:unit": "deno test --allow-read=. --reporter=dot",
+    "watch": "deno task build; watchexec --ignore='dist/*' --postpone 'deno task build'& deno run --allow-env --allow-net --allow-read --allow-run --allow-sys npm:live-server@1.2.1 dist&"
+  }
+}

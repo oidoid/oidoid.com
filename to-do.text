@@ -1,0 +1,6 @@
+Pull out CSS variables for colors, font sizes, and gaps.
+Clean up page-template.
+Review column-span usage in markdown. Can this be generalized as CSS for some elements instead of inject manual column span wrappers?
+Review Twitter share cards.
+Draw picture of old CRT tuning into void or maybe use the 1M bees demo screenshot.
+I'm having a hard time sorting out what to actually list in the portfolio page. I could be exhaustive but the history is so fragmentary and there's a lot of projects that were half-baked. Some of it just feels like a weird resume. I forget though and it seems like it used to be important to me.

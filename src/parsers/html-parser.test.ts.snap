@@ -1,0 +1,354 @@
+export const snapshot = {};
+
+snapshot[`heading with empty body 1`] = `
+Promise {
+  \`<div class='markdown'>
+    <section>
+      
+      <page-title
+        modified='2000-01-02'
+        label='Title'
+        published='2000-01-01'
+        sublabel='Headline.'></page-title>
+    
+      <div class="section-body"></div>
+    </section>
+  
+    <section>
+      <section-heading
+        id='id-2'
+        level=2
+      >
+        2
+      </section-heading>
+      <div class="section-body"></div>
+    </section>
+  </div>\`,
+}
+`;
+
+snapshot[`heading with nonempty body 1`] = `
+Promise {
+  \`<div class='markdown'>
+    <section>
+      
+      <page-title
+        modified='2000-01-02'
+        label='Title'
+        published='2000-01-01'
+        sublabel='Headline.'></page-title>
+    
+      <div class="section-body"></div>
+    </section>
+  
+    <section>
+      <section-heading
+        id='id-2'
+        level=2
+      >
+        2
+      </section-heading>
+      <div class="section-body"><p>a</p>
+</div>
+    </section>
+  </div>\`,
+}
+`;
+
+snapshot[`two headings 1`] = `
+Promise {
+  \`<div class='markdown'>
+    <section>
+      
+      <page-title
+        modified='2000-01-02'
+        label='Title'
+        published='2000-01-01'
+        sublabel='Headline.'></page-title>
+    
+      <div class="section-body"></div>
+    </section>
+  
+    <section>
+      <section-heading
+        id='id-2'
+        level=2
+      >
+        2
+      </section-heading>
+      <div class="section-body"><p>a</p>
+</div>
+    </section>
+  
+    <section>
+      <section-heading
+        id='id-3'
+        level=2
+      >
+        3
+      </section-heading>
+      <div class="section-body"><p>b</p>
+</div>
+    </section>
+  </div>\`,
+}
+`;
+
+snapshot[`h2-6 1`] = `
+Promise {
+  \`<div class='markdown'>
+    <section>
+      
+      <page-title
+        modified='2000-01-02'
+        label='Title'
+        published='2000-01-01'
+        sublabel='Headline.'></page-title>
+    
+      <div class="section-body"></div>
+    </section>
+  
+    <section>
+      <section-heading
+        id='id-2'
+        level=2
+      >
+        2
+      </section-heading>
+      <div class="section-body"><p>a</p>
+</div>
+    </section>
+  
+    <section>
+      <section-heading
+        id='id-3'
+        level=3
+      >
+        3
+      </section-heading>
+      <div class="section-body"><p>b
+c</p>
+</div>
+    </section>
+  
+    <section>
+      <section-heading
+        id='id-4'
+        level=4
+      >
+        4
+      </section-heading>
+      <div class="section-body"><p>d
+e
+f</p>
+</div>
+    </section>
+  
+    <section>
+      <section-heading
+        id='id-5'
+        level=5
+      >
+        5
+      </section-heading>
+      <div class="section-body"><p>g
+h
+i
+j</p>
+</div>
+    </section>
+  
+    <section>
+      <section-heading
+        id='id-6'
+        level=6
+      >
+        6
+      </section-heading>
+      <div class="section-body"><p>k
+l
+m
+n
+o</p>
+</div>
+    </section>
+  </div>\`,
+}
+`;
+
+snapshot[`fence 1`] = `
+Promise {
+  \`<div class='markdown'>
+    <section>
+      
+      <page-title
+        modified='2000-01-02'
+        label='Title'
+        published='2000-01-01'
+        sublabel='Headline.'></page-title>
+    
+      <div class="section-body"><pre>a
+b
+c</pre></div>
+    </section>
+  </div>\`,
+}
+`;
+
+snapshot[`indented fence 1`] = `
+Promise {
+  \`<div class='markdown'>
+    <section>
+      
+      <page-title
+        modified='2000-01-02'
+        label='Title'
+        published='2000-01-01'
+        sublabel='Headline.'></page-title>
+    
+      <div class="section-body"><pre>a
+b
+c</pre></div>
+    </section>
+  </div>\`,
+}
+`;
+
+snapshot[`doubly indented fence 1`] = `
+Promise {
+  \`<div class='markdown'>
+    <section>
+      
+      <page-title
+        modified='2000-01-02'
+        label='Title'
+        published='2000-01-01'
+        sublabel='Headline.'></page-title>
+    
+      <div class="section-body"><pre>  a
+  b
+  c</pre></div>
+    </section>
+  </div>\`,
+}
+`;
+
+snapshot[`fence with hashes 1`] = `
+Promise {
+  \`<div class='markdown'>
+    <section>
+      
+      <page-title
+        modified='2000-01-02'
+        label='Title'
+        published='2000-01-01'
+        sublabel='Headline.'></page-title>
+    
+      <div class="section-body"><pre>## a
+## b
+## c</pre></div>
+    </section>
+  </div>\`,
+}
+`;
+
+snapshot[`heading before fence 1`] = `
+Promise {
+  \`<div class='markdown'>
+    <section>
+      
+      <page-title
+        modified='2000-01-02'
+        label='Title'
+        published='2000-01-01'
+        sublabel='Headline.'></page-title>
+    
+      <div class="section-body"></div>
+    </section>
+  
+    <section>
+      <section-heading
+        id='id-2'
+        level=2
+      >
+        2
+      </section-heading>
+      <div class="section-body"><p>a</p>
+<pre>b
+c
+d</pre></div>
+    </section>
+  </div>\`,
+}
+`;
+
+snapshot[`heading after fence 1`] = `
+Promise {
+  \`<div class='markdown'>
+    <section>
+      
+      <page-title
+        modified='2000-01-02'
+        label='Title'
+        published='2000-01-01'
+        sublabel='Headline.'></page-title>
+    
+      <div class="section-body"><pre>a
+b
+c</pre></div>
+    </section>
+  
+    <section>
+      <section-heading
+        id='id-2'
+        level=2
+      >
+        2
+      </section-heading>
+      <div class="section-body"><p>d</p>
+</div>
+    </section>
+  </div>\`,
+}
+`;
+
+snapshot[`heading, fence, heading 1`] = `
+Promise {
+  \`<div class='markdown'>
+    <section>
+      
+      <page-title
+        modified='2000-01-02'
+        label='Title'
+        published='2000-01-01'
+        sublabel='Headline.'></page-title>
+    
+      <div class="section-body"></div>
+    </section>
+  
+    <section>
+      <section-heading
+        id='id-2'
+        level=2
+      >
+        2
+      </section-heading>
+      <div class="section-body"><p>a</p>
+<pre>b
+c
+d</pre></div>
+    </section>
+  
+    <section>
+      <section-heading
+        id='id-3'
+        level=3
+      >
+        3
+      </section-heading>
+      <div class="section-body"><p>e</p>
+</div>
+    </section>
+  </div>\`,
+}
+`;
