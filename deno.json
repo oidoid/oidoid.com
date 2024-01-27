@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "exactOptionalPropertyTypes": true,
+    "experimentalDecorators": true,
     "noImplicitOverride": true,
     "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
