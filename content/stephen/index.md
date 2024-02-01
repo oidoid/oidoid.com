@@ -54,7 +54,7 @@ So there you have it.
   [oidoid](https://git.io/oidoid))
 - [Mastodon](https://mastodon.social/@oid)
 - [Twitter](https://twitter.com/niedzielski)
-- [Read.cv](https://read.cv/oid)
+- [read.cv](https://read.cv/oid)
 - [LinkedIn](https://linkedin.com/in/sniedzie)
 - [Hacker News](https://news.ycombinator.com/user?id=niedzielski)
 - [Work at a Startup](https://www.workatastartup.com) (profiles are not
