@@ -14,6 +14,7 @@ I contribute to:
 | :------------------------------------------------------ | :-------------------------------------------------------------------- | :--------- |
 | [Android Arts](https://androidarts.com)                 | [$3 / month](https://patreon.com/androidarts)                         | 2021-10-09 |
 | [Bottles](https://usebottles.com)                       | [$24 / year](https://usebottles.com/funding)                          | 2022-02-21 |
+| [DeaDBeeF](https://deadbeef.sourceforge.io)             | [$4 / month](https://deadbeef.sourceforge.io/support.html)            | 2024-02-09 |
 | [Debian](https://debian.org)                            | [$3 / month](https://debian.org/donations#spi)                        | 2022-01-09 |
 | [Electronic Frontier Foundation (EFF)](https://eff.org) | [$100 / year](https://supporters.eff.org/donate/join-eff-m--h)        | 2022-04-30 |
 | [Foliate](https://johnfactotum.github.io/foliate/)      | [$50 / year](https://www.buymeacoffee.com/johnfactotum)               | 2023-11-13 |
