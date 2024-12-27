@@ -20,6 +20,7 @@ I contribute to:
 | [Foliate](https://johnfactotum.github.io/foliate/)      | [$50 / year](https://www.buymeacoffee.com/johnfactotum)               | 2023-11-13 |
 | [Free Software Foundation (FSF)](https://fsf.org)       | [$280 / year](https://my.fsf.org/donate), $100 through 2024-12-27                             | 2022-05-14 |
 | [GNOME Foundation](https://gnome.org)                   | [$10 / month](https://gnome.org/donate), $3 through 2024-12-27                                | 2022-01-09 |
+| [Internet Archive](https://archive.org)                 | [$15 / month](https://archive.org/donate), $5 through 2024-12-27                        | 2022-09-30? |
 | [LineageOS](https://lineageos.org)                      | [$5 / month](https://patreon.com/LineageOS), $2 through 2024-12-27                           | 2022-05-01 |
 | [shmuplations](https://shmuplations.com)                | [$3 / month](https://patreon.com/shmuplations), $2 through 2024-01-16 | 2021-10-09 |
 | [Standard Ebooks](https://standardebooks.org)           | [$2 / month](https://fundraising.fracturedatlas.org/standard-ebooks)  | 2021-12-04 |
