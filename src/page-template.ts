@@ -1,13 +1,13 @@
-import { type TemplateResult } from 'npm:lit';
-import { unsafeHTML } from 'npm:lit/directives/unsafe-html.js';
-import { html, unsafeStatic } from 'npm:lit/static-html.js';
-import './elements/instant-photo.ts'; // Only used on profile.
-import './elements/page-menu.ts';
-import './elements/page-title.ts';
-import './elements/section-heading.ts';
-import './elements/up-link.ts';
-import type { Page } from './types/page.ts';
-import { styles } from './utils/styles.ts';
+import { type TemplateResult } from 'npm:lit'
+import { unsafeHTML } from 'npm:lit/directives/unsafe-html.js'
+import { html, unsafeStatic } from 'npm:lit/static-html.js'
+import './elements/instant-photo.ts' // Only used on profile.
+import './elements/page-menu.ts'
+import './elements/page-title.ts'
+import './elements/section-heading.ts'
+import './elements/up-link.ts'
+import type { Page } from './types/page.ts'
+import { styles } from './utils/styles.ts'
 
 type TemplateProps = {
   readonly dateModified: string
