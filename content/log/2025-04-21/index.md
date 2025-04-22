@@ -1,6 +1,6 @@
 ---
 dateModified: '2025-04-21'
-datePublished: '2025-04-21'
+datePublished: '2025-04-22'
 keywords: ['blog', 'programming', 'game dev']
 headline: 'building games for Reddit.'
 title: 'a day full of sun'
@@ -378,6 +378,7 @@ Android, and native iOS. this is the last checklist I had put together:
 - snoovatar integration.
 - art, code, and sound are small enough to build with time and resources
   available.
+- a shared vision with collaborators is paramount and challenging to achieve.
 - user generated content is great for social sites like Reddit and also a great
   way to minimize content costs.
 
@@ -402,7 +403,8 @@ its tangled history up and down. it really helped me debug platform issues when
 they arose.
 
 most of the games have already broken down as the platform has evolved beyond
-them. nevertheless, I'm proud of my work.
+them. nevertheless, I'm proud of my work and immensely grateful for the
+opportunity.
 
 Studios was slated for disbandment right before the launch of Field. I'm back
 into platform work on the new Creation team like I never left working on a major
