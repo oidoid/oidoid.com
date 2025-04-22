@@ -20,7 +20,7 @@ export async function parseHTML(meta: Meta, markdown: string): Promise<string> {
         // need to discriminate headings within fences. Four space-prefix blocks
         // without the ``` openers and closers should work too.
         // deno-lint-ignore no-regex-spaces
-        return `<pre>${(code.replace(/^  /mg, ''))}</pre>`
+        return `<pre>${(code.text.replace(/^  /mg, ''))}</pre>`
       },
     },
   })

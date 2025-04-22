@@ -1,13 +1,13 @@
-import { type TemplateResult } from 'npm:lit'
-import { unsafeHTML } from 'npm:lit/directives/unsafe-html.js'
-import { html, unsafeStatic } from 'npm:lit/static-html.js'
-import './elements/instant-photo.ts' // Only used on profile.
-import './elements/page-menu.ts'
-import './elements/page-title.ts'
-import './elements/section-heading.ts'
-import './elements/up-link.ts'
-import type { Page } from './types/page.ts'
-import { styles } from './utils/styles.ts'
+import { type TemplateResult } from 'npm:lit';
+import { unsafeHTML } from 'npm:lit/directives/unsafe-html.js';
+import { html, unsafeStatic } from 'npm:lit/static-html.js';
+import './elements/instant-photo.ts'; // Only used on profile.
+import './elements/page-menu.ts';
+import './elements/page-title.ts';
+import './elements/section-heading.ts';
+import './elements/up-link.ts';
+import type { Page } from './types/page.ts';
+import { styles } from './utils/styles.ts';
 
 type TemplateProps = {
   readonly dateModified: string
@@ -41,7 +41,7 @@ export function renderPageTemplate(
       return renderTemplate({ ...templateProps, template: content })
 
     case 'Index': {
-      if (!page.meta.title) throw Error(`"${page.url}" missing title`)
+      if (!page.meta.title) throw Error(`"${page.url}" no title`)
       const isLogs = page.meta.title === 'Log'
       const subcontent = html`
         <table class=zebra>
@@ -84,7 +84,7 @@ export function renderPageTemplate(
 
     case 'Log':
     case 'Note':
-      if (!page.meta.title) throw Error(`"${page.url}" missing title`)
+      if (!page.meta.title) throw Error(`"${page.url}" no title`)
       return renderTemplate({
         ...templateProps,
         template: html`
@@ -129,7 +129,18 @@ function renderTemplate(props: TemplateProps): TemplateResult {
         <link rel='canonical' href='${canonicalURL}'>
         <meta
           http-equiv='Content-Security-Policy'
-          content="upgrade-insecure-requests; form-action 'none'; base-uri 'none'; default-src 'none'; img-src 'self' data:; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'self'; media-src 'self'"
+          content="
+            upgrade-insecure-requests;
+            form-action 'none';
+            frame-src https://www.youtube.com;
+            base-uri 'none';
+            default-src 'none';
+            img-src 'self' data:;
+            script-src 'unsafe-inline';
+            style-src 'unsafe-inline';
+            connect-src 'self';
+            media-src 'self';
+          "
         >
         ${
     unsafeStatic(
