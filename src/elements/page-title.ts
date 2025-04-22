@@ -41,13 +41,13 @@ export class PageTitle extends LitElement {
   `
 
   @property()
-  label: string = ''
+  accessor label: string = ''
   @property()
-  modified: string = ''
+  accessor modified: string = ''
   @property()
-  published: string = ''
+  accessor published: string = ''
   @property()
-  sublabel: string = ''
+  accessor sublabel: string = ''
 
   protected override render(): TemplateResult {
     let dates

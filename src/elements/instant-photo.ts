@@ -114,9 +114,9 @@ export class InstantPhoto extends LitElement {
   `
 
   @property()
-  alt: string = ''
+  accessor alt: string = ''
   @property()
-  src: string = ''
+  accessor src: string = ''
 
   protected override render(): TemplateResult {
     return html`

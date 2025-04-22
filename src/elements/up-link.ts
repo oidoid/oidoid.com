@@ -37,7 +37,7 @@ export class UpLink extends LitElement {
   `
 
   @property()
-  type?: PageType
+  accessor type: PageType | undefined
 
   protected override render(): TemplateResult {
     if (!this.type) throw Error('missing type')

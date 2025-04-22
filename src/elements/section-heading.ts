@@ -70,10 +70,10 @@ export class SectionHeading extends LitElement {
   `
 
   @property()
-  override id: string = ''
+  override accessor id: string = ''
 
   @property({ type: Number })
-  level: 1 | 2 | 3 | 4 | 5 | 6 = 1
+  accessor level: 1 | 2 | 3 | 4 | 5 | 6 = 1
 
   protected override render(): TemplateResult {
     const heading = unsafeStatic(`h${this.level}`)
